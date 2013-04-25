@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAfH///8Q\u003d",
+        "filename": "cm.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 19
+      },
+      "writtenOn": "2013-04-25T04:31:28Z",
+      "side": 1,
+      "message": "PRODUCT_NAME\u003dSGP311\n\nPRIVATE_BUILD_DESC should be updated too",
+      "revId": "b40ca635819ca004cba64d60ec7196997ee8a4d7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
