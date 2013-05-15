@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-char const*const LCD_BACKLIGHT_FILE		= "/sys/class/leds/lm3533-lcd-bl-1/brightness";
-char const*const LCD_BACKLIGHT2_FILE		= "/sys/class/leds/lm3533-lcd-bl-2/brightness";
+char const*const LCD_BACKLIGHT_FILE		= "/sys/class/leds/lm3533-lcd-bl/brightness";
+char const*const LCD_BACKLIGHT2_FILE		= NULL;
 char const*const RED_LED_FILE			= "/sys/class/leds/lm3533-red/brightness";
 char const*const GREEN_LED_FILE			= "/sys/class/leds/lm3533-green/brightness";
 char const*const BLUE_LED_FILE			= "/sys/class/leds/lm3533-blue/brightness";
@@ -30,4 +30,3 @@ char const*const LED_FILE_PATTERN[]		= {
 char const*const PATTERNOFF			= "0,0,0,0";
 
 char const*const ALS_FILE			= "/sys/devices/i2c-0/0-0036/als_enable";
-
