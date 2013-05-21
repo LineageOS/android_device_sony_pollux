@@ -12,6 +12,10 @@
     "target_path": "device/sony/fusion3-common"
   },
   {
+    "repository": "android_device_sony_pollux-common",
+    "target_path": "device/sony/pollux-common"
+  },
+  {
     "repository": "android_kernel_sony_apq8064",
     "target_path": "kernel/sony/apq8064"
   },

@@ -12,29 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from the common fusion3 definitions
--include device/sony/fusion3-common/BoardConfigCommon.mk
+# inherit from the common pollux definitions
+-include device/sony/pollux-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/sony/pollux/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGP321,Pollux,pollux
-
-TARGET_SPECIFIC_HEADER_PATH += device/sony/pollux/include
-
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/pollux/bluetooth
+TARGET_OTA_ASSERT_DEVICE := SGP321,pollux
 
 TARGET_KERNEL_CONFIG := cm_fusion3_pollux_defconfig
-
-# Partition information
-BOARD_VOLD_MAX_PARTITIONS := 26
-
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2147483648
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12425608704
-BOARD_CACHEIMAGE_PARTITION_SIZE := 576716800
-
-DEVICE_RESOLUTION := 1920x1200
-SOMC_CFG_SENSORS_PROXIMITY_APDS9702 := false
