@@ -25,4 +25,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
 
-$(call inherit-product-if-exists, vendor/sony/pollux/pollux-vendor.mk)
++# Include non-opensource parts
+$(call inherit-product, vendor/sony/pollux/pollux-vendor.mk)
