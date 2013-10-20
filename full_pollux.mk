@@ -29,7 +29,7 @@ TARGET_SCREEN_WIDTH := 1920
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Common Sony Resources
-$(call inherit-product, device/sony/common/resources-xxhdpi.mk)
+$(call inherit-product, device/sony/common/resources.mk)
 
 # Inherit from pollux device
 $(call inherit-product, device/sony/pollux/pollux.mk)
