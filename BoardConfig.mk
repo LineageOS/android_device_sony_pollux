@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # inherit from the common pollux definitions
--include device/sony/pollux-common/BoardConfigCommon.mk
+include device/sony/pollux-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/sony/pollux/BoardConfigVendor.mk
