@@ -21,6 +21,10 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/pollux/overlay
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
+# Device specific init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
+
 # Device specific sysmon_monitor conf
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/sysmon.cfg:system/etc/sysmon.cfg
