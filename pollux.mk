@@ -25,9 +25,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
 
-# Device specific sysmon_monitor conf
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/sysmon.cfg:system/etc/sysmon.cfg
-
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/pollux/pollux-vendor.mk)
