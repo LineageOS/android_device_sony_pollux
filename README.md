@@ -1,2 +1,2 @@
-android_device_sony_pollux
-==========================
+Xperia Tablet Z LTE - CyanogenMod 13.0
+======================================

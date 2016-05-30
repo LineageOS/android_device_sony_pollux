@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2013-2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from the common pollux definitions
+# Device path
+DEVICE_PATH := device/sony/pollux
+
+# Device board elements
+include $(DEVICE_PATH)/board/*.mk
+
+# Common pollux definitions
 include device/sony/pollux-common/BoardConfigCommon.mk
 
-# inherit from the proprietary version
+# Device vendor board
 -include vendor/sony/pollux/BoardConfigVendor.mk
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := SGP321,pollux
-
-TARGET_KERNEL_CONFIG := cm_fusion3_pollux_defconfig
