@@ -21,4 +21,4 @@ include device/sony/pollux-common/BoardConfigCommon.mk
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP321,pollux
 
-TARGET_KERNEL_CONFIG := cm_fusion3_pollux_defconfig
+TARGET_KERNEL_CONFIG := fusion3_pollux_defconfig
