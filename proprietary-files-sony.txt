@@ -1,4 +1,7 @@
+# Apps Firmware
 etc/firmware/apps.mbn
+
+# DSPS Firmware
 etc/firmware/dsp1.mbn
 etc/firmware/dsp2.mbn
 etc/firmware/dsp3.mbn
@@ -9,4 +12,6 @@ etc/firmware/dsps.b03
 etc/firmware/dsps.b04
 etc/firmware/dsps.b05
 etc/firmware/dsps.mdt
+
+# NFC
 lib/hw/nfc.msm8960.so

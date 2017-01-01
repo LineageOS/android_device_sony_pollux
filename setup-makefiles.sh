@@ -23,4 +23,4 @@ export DEVICE_SUB_COMMON=pollux-common
 export DEVICE=pollux
 export VENDOR=sony
 
-./../$DEVICE_SUB_COMMON/extract-files.sh $@
+./../$DEVICE_SUB_COMMON/setup-makefiles.sh
