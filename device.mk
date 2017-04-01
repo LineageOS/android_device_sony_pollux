@@ -1,4 +1,6 @@
+#
 # Copyright (C) 2013 The CyanogenMod Project
+#           (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,19 +13,19 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-# Inherit the pollux-common definitions
-$(call inherit-product, device/sony/pollux-common/pollux-common.mk)
+# Device specific overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-DEVICE_PACKAGE_OVERLAYS += device/sony/pollux/overlay
+# Common device elements
+$(call inherit-product, device/sony/pollux-common/common.mk)
 
-# These are the hardware-specific features
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+# Product common configurations
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Device specific init
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
+# Device product elements
+include $(LOCAL_PATH)/product/*.mk
 
-# Include non-opensource parts
+# Vendor product configurations
 $(call inherit-product, vendor/sony/pollux/pollux-vendor.mk)
